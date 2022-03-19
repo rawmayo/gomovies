@@ -30,11 +30,15 @@ const setDetailsPage = (data) => {
     .querySelector(".poster")
     .setAttribute(
       "src",
-      data.Poster !== "N/A" ? data.Poster : "../assets/imgs/no-poster.jpg"
+      data.Poster !== "N/A"
+        ? data.Poster
+        : "https://rawmayo.github.io/gomovies/assets/imgs/no-poster.jpg"
     );
 
   document.querySelector("header.view-header").style.background = `url(${
-    data.Poster !== "N/A" ? data.Poster : "../assets/imgs/no-poster.jpg"
+    data.Poster !== "N/A"
+      ? data.Poster
+      : "https://rawmayo.github.io/gomovies/assets/imgs/no-poster.jpg"
   }) repeat center`;
 
   document.querySelector(".title").innerText = data.Title;

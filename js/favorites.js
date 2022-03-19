@@ -69,7 +69,10 @@ const createCards = (data) => {
 
   const topSec = makeHtml("div", undefined, ["top-section"]);
   const posterImg = makeHtml("img", undefined, undefined, {
-    src: Poster !== "N/A" ? Poster : "../assets/imgs/no-poster.jpg",
+    src:
+      Poster !== "N/A"
+        ? Poster
+        : "https://rawmayo.github.io/gomovies/assets/imgs/no-poster.jpg",
     alt: Title,
   });
   topSec.appendChild(posterImg);
