@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GoMovies - Find the right entertainment to watch</title>
+  </head>
+  <body>
+    <header class="view-header">
+      <div class="meta-data overlay">
+        <div class="container">
+          <h1 class="title"></h1>
+          <div class="genre-container"></div>
+          <div class="ratings">
+            <div class="imdb">
+              <h6>IMDb</h6>
+              <span class="imdb-value"></span>
+            </div>
+            <div class="metascore">
+              <h6>Metascore</h6>
+              <span class="metascore-value"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="view-main">
+      <div class="loader">
+        <i class="fa-solid fa-circle-notch"></i>
+      </div>
+      <div class="container">
+        <div class="details-top">
+          <img src="#" alt="" class="poster" />
+          <div class="details">
+            <div class="group">
+              <h5 class="head">Synopsis:</h5>
+              <span id="synopsis" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Director:</h5>
+              <span id="director" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Writer:</h5>
+              <span id="writer" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Actors:</h5>
+              <span id="actors" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Released Data:</h5>
+              <span id="release" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Rated:</h5>
+              <span id="rated" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Duration:</h5>
+              <span id="duration" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Language:</h5>
+              <span id="lang" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Country:</h5>
+              <span id="country" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">Awards:</h5>
+              <span id="awards" class="detail"></span>
+            </div>
+            <div class="group">
+              <h5 class="head">DVD Release:</h5>
+              <span id="dvd" class="detail"></span>
+            </div>
+          </div>
+        </div>
+        <div class="group details-mid">
+          <h3>Box Office</h3>
+          <span class="boxoffice"></span>
+        </div>
+        <div class="details-bottom">
+          <div class="source-rating">
+            <h5>Internet Movie Database</h5>
+            <p id="imb"></p>
+          </div>
+          <div class="source-rating">
+            <h5>Rotten Tomatoes</h5>
+            <p id="rotten"></p>
+          </div>
+          <div class="source-rating">
+            <h5>Metacritic</h5>
+            <p id="metacritics"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/details.js" type="module" defer></script>
+  </body>
+</html>

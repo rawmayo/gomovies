@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GoMovies - Find the right entertainment to watch</title>
+  </head>
+  <body>
+    <header class="index-header">
+      <div class="container">
+        <h1 class="brand-name">GoMovies</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="favorites.html"
+                ><i class="fa-solid fa-heart"></i> My Favorites</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="overlay">
+          <div class="container">
+            <div class="hero-text">
+              <h1 class="hero-heading">
+                Welcome to <span class="brand-name">GoMovies</span>
+              </h1>
+              <p class="hero-secondary">
+                Find the best movies, TV series, and episodes the world has to
+                offer all in one place
+              </p>
+            </div>
+            <div class="search-box-container">
+              <form class="search-box">
+                <div class="search-type-container">
+                  <button type="button" class="btn btn-select">
+                    Movie <i class="fa-solid fa-caret-down"></i>
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search GoMovies"
+                  class="search-input"
+                />
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+              <div class="search-type-dropdown v-hidden">
+                <ul>
+                  <li class="types">Movie</li>
+                  <li class="types">Series</li>
+                  <li class="types">Episode</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="entertainment">
+        <div class="movies">
+          <div class="container">
+            <div class="entertainment-heading">
+              <h1>Movies | TV Series | Episodes</h1>
+              <span class="search-count">Nothing to show</span>
+            </div>
+            <div class="card-container">
+              <div class="loader d-none">
+                <i class="fa-solid fa-circle-notch"></i>
+              </div>
+            </div>
+            <div class="load-more d-none">
+              <button type="button" class="btn btn-load">
+                Load more <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js" type="module" defer></script>
+  </body>
+</html>
